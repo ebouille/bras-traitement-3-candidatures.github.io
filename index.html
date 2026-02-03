@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide à destination des conseiller(e)s</title>
+    <title>Expérimentation Contrat d'Engagement - Guide Conseiller</title>
     
     <!-- Google tag (gtag.js) avec détection de bots -->
     <script>
@@ -17,7 +17,7 @@
         );
       }
       
-      if (!isBot()) {
+if (!isBot()) {
         var script = document.createElement('script');
         script.async = true;
         script.src = 'https://www.googletagmanager.com/gtag/js?id=G-HC63DMFHHN';
@@ -28,6 +28,7 @@
         gtag('js', new Date());
         gtag('config', 'G-HC63DMFHHN');
       }
+
     </script>
     
     <style>
@@ -179,22 +180,44 @@
         .highlight-box {
             background: #fff8e1;
             border-left: 4px solid #f57c00;
-            padding: 24px;
+            padding: 12px 20px;
             border-radius: 8px;
             margin: 28px 0;
             box-shadow: 0 2px 8px rgba(245,158,11,0.1);
         }
 
-        .info-box {
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-            border-left: 4px solid #0284c7;
-            padding: 24px;
-            border-radius: 8px;
-            margin: 28px 0;
-            box-shadow: 0 2px 8px rgba(2,132,199,0.1);
-            position: relative;
-        }
+      .info-box {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-left: 4px solid #0284c7;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin: 28px 0;
+    box-shadow: 0 2px 8px rgba(2,132,199,0.1);
+    position: relative;
+    font-size: 0.9em;
+    font-weight: normal;
+}
 
+.info-box p {
+    margin: 0;
+}
+
+     .info-box-2 {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-left: 4px solid #0284c7;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin: 28px 0;
+    box-shadow: 0 2px 8px rgba(2,132,199,0.1);
+    position: relative;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.info-box-2 p {
+    margin: 0;
+}
+  
         .warning-box {
             background: linear-gradient(135deg, #fef3c7 0%, #fef9e7 100%);
             border-left: 4px solid #f59e0b;
@@ -374,9 +397,29 @@
                 padding: 30px 20px;
             }
 
-            .header-banner h1 {
-                font-size: 26px;
-            }
+ .header-banner {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .header-banner img {
+        position: absolute;
+        left: 20px;
+        width: 60px;
+        height: auto;
+    }
+    
+    .header-text {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .header-text h1 {
+        font-size: 26px;
+        margin: 5px 0;
+    }
 
             section h2 {
                 font-size: 24px;
@@ -393,17 +436,34 @@
 </head>
 
 <body>
-
-<div class="header-banner">
-    <h1>Guide à destination des conseiller(e)s</h1>
+<div class="header-banner" style="position: relative; padding-top: 60px;">
+    <img src="logoFT.png" alt="Logo" style="position: absolute; left: 30px; top: 30px; width: 300px; height: auto;">
+    <div class="header-text" style="text-align: center;">
+        <h1>Guide pratique conseiller(e)s</h1>
+        <h1>Préciser l'effort de recherche d'emploi attendu</h1>
+    </div>
 </div>
-
 <div class="main-container">
     <nav class="side-nav">
         <ul>
             <li><a href="#pourquoi" class="nav-link active">Objectif</a></li>
             <li><a href="#public-concerne" class="nav-link">Public concerné</a></li>
-            <li><a href="#consignes" class="nav-link">En pratique</a></li>
+            <li><a href="#consignes" class="nav-link">Précision de l'effort de recherche</a>
+                <ul class="sub-nav">
+                    <li>
+                        <a href="#frequence" class="nav-link">
+                            Objectif exprimé en fréquence
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#nombre" class="nav-link">
+                            Objectif exprimé en nombre de candidatures
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 
@@ -414,105 +474,113 @@
             <h2>Pourquoi vouloir définir un objectif chiffré de candidatures ?</h2>
             
             <ul>
-                <li><strong>Pour clarifier les attentes et encourager l'engagement du demandeur d'emploi :</strong> un objectif concret est plus mobilisateur qu'une consigne vague comme « envoyer des candidatures », notamment pour les demandeurs d'emploi moins autonomes ou qui sous-estiment ou surestiment leurs chances de retour à l'emploi et les efforts associés.</li>
+                <li><strong>Pour clarifier les attentes et encourager l'engagement du demandeur d'emploi :</strong> un objectif concret est plus mobilisateur qu'une consigne vague comme « envoyer des candidatures ».</li>
                 <li><strong>Pour donner un repère au demandeur d'emploi :</strong> cela l'aide à mieux jauger l'effort attendu selon son profil, le secteur visé ou la conjoncture locale.</li>
             </ul>
 
-            <div class="info-box">
-                <h4>ℹ️ Dans le cadre de l'introduction du contrat d'engagement, France Travail et l'Institut des Politiques Publiques travaillent conjointement à l'amélioration de ce dispositif, et cherchent à comprendre l'impact du contrat d'engagement.</h4>
-            </div>
-        </section>
-
-        <!-- PUBLIC CONCERNÉ -->
+          <div class="info-box"> 
+            <p>ℹ️ Dans le cadre de la mise en œuvre du contrat d’engagement, France Travail, en collaboration avec l’Institut des politiques publiques, cherche à améliorer cet outil en évaluant l’impact de la précision des exigences d’effort de recherche d’emploi inscrites dans le plan d’action.</p> </div>
+   
+<!-- PUBLIC CONCERNÉ -->
         <section id="public-concerne">
-            <h2>Public concerné</h2>
+            <h2>Pour quel public ?</h2>
 
             <div class="highlight-box">
-                <p><strong>Tous les demandeurs d'emploi que vous accompagnez qui ont un contrat d'engagement ouvert et un métier recherché défini.</strong></p>
-            </div>
+                <p style="margin-bottom: 8px;"><strong>Chaque demandeur d'emploi que vous accompagnez qui a signé un contrat d'engagement et qui a un métier recherché défini</strong>.</p>
+         </div>
+    <div class="info-box-2">
+        <p>ℹ️ Cette démarche s’inscrit pleinement dans votre rôle d’accompagnement personnalisé, <strong>en vous laissant toute liberté
+            pour adapter l’objectif de candidatures aux profils et aux situations des personnes que vous suivez</strong>, selon les critères que vous jugez pertinents.
+        </p>
+    </div>
 
-            <h3>Questions fréquentes</h3>
+   <!-- EN PRATIQUE -->
+<section id="consignes">
+    <h2>En pratique, comment préciser l'effort attendu ?</h2>
+<h4>Comment inscrire l'objectif de candidatures dans le plan d'action d'un demandeur d'emploi ?</h4>
+
+    <p>Selon le niveau d’autonomie du demandeur d’emploi (modalités Suivi, Guidé, Essentiel, Global, Renforcé, Intensif) et la tension du métier recherché, l’objectif de candidatures peut être inscrit :
+    <ul>
+        <li> 🟣 <strong>soit sous la forme d’une fréquence</strong> de candidatures ou de réponses à offres à réaliser, </li>
+        <li> <strong>🟪 soit sous la forme d’un nombre défini de démarches ciblées</strong> (réponses à des offres identifiées, MEC, MER).</li>
+</p>
+<section id="frequence">
+<div class="tip-box">
+    <h4>
+        🟣 Objectif exprimé en fréquence<br>
+        <small> Secteurs en tension</small>
+    </h4>
+    <p>
+        Exemple : vous avez convenu avec un demandeur d’emploi de l’envoi de
+        10 candidatures par semaine ce mois-ci.
+    </p>
+    <p>
+        <strong>Dans ODD, ajoutez une démarche « Candidatures spontanées »</strong> ou
+        <strong>« Réponses à des offres d’emploi »</strong>,
+        puis <strong>précisez dans le commentaire de la démarche la fréquence attendue</strong>
+        (« 10/semaine »).
+    </p>
+    <p>
+        ➜ Une seule action est ainsi ajoutée au plan d'action, avec en commentaire la fréquence de réalisation.
+    </p>
+</div>
+<section id="nombre">
+<div class="tip-box">
+    <h4>
+        🟪 Objectif exprimé en nombre de candidatures<br>
+       <p> <small>Secteurs à faible tension</small></p>
+</h4>
+    <p>
+        Exemple : vous avez convenu avec un demandeur d’emploi de répondre à
+        3 offres cette semaine, dans 3 entreprises identifiées avec lui/elle.
+    </p>
+    <p>
+        <strong> 1 - Dans ODD, ajoutez une démarche « Réponses à des offres d’emploi » en indiquant le nom de la première entreprise</strong>
+        (cela constitue une première candidature).
+        <strong>Utilisez ensuite la saisie multiple pour créer les démarches correspondant aux autres entreprises</strong>.
+        
+    </p>
+        <p>
+        <strong> 2 - Dans MAP, la création d'une Mise en Relation (MER) génère automatique une démarche, ensuite ajoutée dans le plan d'action du demandeur d'emploi</strong>.
+        De la même façon, une <strong>Mise en Contact (MEC)</strong> - lorsque le demandeur d'emploi candidate à une offre via le site de France Travail - <strong>s'ajoute automatique comme démarche dans le plan d'action</strong>.
+    </p>
+    <p>
+       ➜  Le plan d’action est ainsi alimenté d’autant d’actions distinctes que le nombre de candidatures fixé.
+    </p>
+</section>
+
+    
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>FAQ</h2>
+        
 
             <div class="faq-section" data-faq-id="faq_1">
                 <div class="faq-question">
-                    La fixation de cette cible s'applique-t-elle à tous les portefeuilles d'accompagnement (Suivi, Guidé, Renforcé, Global...) ?
+                    La fixation de cette cible s'applique-t-elle à tous les portefeuilles d'accompagnement (Suivi, Guidé, Essentiel, Renforcé, Global, Intensif...) ?
                 </div>
                 <div class="faq-answer">
-                    <p><strong>OUI.</strong> Tous les demandeurs d'emploi, quelle que soit leur modalité d'accompagnement, sont concernés par cette expérimentation, s'ils ont un contrat d'engagement ouvert et un métier recherché défini. L'autonomie du demandeur d'emploi peut, en revanche, être un élément déterminant dans le choix du nombre de candidatures à envoyer.</p>
-                    <p>Il est entendu que les conseillers en portefeuille Suivi ou Guidé ne seront pas en capacité de vérifier régulièrement la tenue de cet objectif. Ce n'est pas grave. C'est le fait de fixer un objectif chiffré de candidatures qui compte dans cette expérimentation, même s'il ne peut pas toujours être contrôlé.</p>
+                    <p><strong>OUI.</strong> Tous les demandeurs d'emploi, quelle que soit leur modalité d'accompagnement, sont concernés par cette expérimentation, s'ils ont un contrat d'engagement ouvert et un métier recherché défini. L'autonomie du demandeur d'emploi peut, en revanche, être un élément déterminant dans le choix du nombre et du type de candidatures à envoyer.</p>
+                    <p>Il est entendu que les conseillers gérant des portefeuilles volumineux ne pourront pas assurer un suivi régulier du respect de cet objectif. Ce n'est pas grave. C'est le fait de fixer un objectif chiffré de candidatures qui compte dans cette expérimentation, même s'il ne peut pas toujours être contrôlé.</p>
                 </div>
             </div>
 
             <div class="faq-section" data-faq-id="faq_2">
                 <div class="faq-question">
-                    La fixation de cette cible s'applique-t-elle aux bénéficiaires du RSA accompagnés par France Travail ?
+                    La fixation de cette cible s'applique-t-elle aux publics suivis par France Travail mais non indemnisables à l'assurance chômage ?
                 </div>
                 <div class="faq-answer">
-                    <p><strong>OUI.</strong> Les bénéficiaires du RSA, s'ils sont suivis par un(e) conseiller(e) France Travail sont également concernés par cette expérimentation, s'ils ont un contrat d'engagement ouvert et un métier recherché défini. Le fait d'être au RSA peut, en revanche, être un élément déterminant dans le choix du nombre de candidatures à envoyer.</p>
+                    <p><strong>OUI.</strong> Toute personne suivie par un(e) conseiller(e) France Travail est concernée par cette expérimentation, si un contrat d'engagement est ouvert et qu'un métier recherché est défini. Cela concerne donc aussi bien les inscrit(e)s non-indemenisables à la recherche d'un emploi que les personnes bénéficiant d'un accompagnement spécifique (bénéficiaires du RSA ou de l'AAH, jeunes avec une allocation CEJ...). L'accompagenement spécifique peut d'ailleurs être un élément déterminant dans le choix du nombre de candidatures à envoyer.</p>
                 </div>
             </div>
-
-            <div class="faq-section" data-faq-id="faq_3">
-                <div class="faq-question">
-                    La fixation de cette cible s'applique-t-elle aux demandeurs d'emploi en situation de handicap, suivis par un(e) conseiller(e) Cap 'Emploi ?
-                </div>
-                <div class="faq-answer">
-                    <p><strong>NON.</strong> Vous devez fixer un objectif de candidatures pour les demandeurs d'emploi en situation de handicap seulement s'ils sont suivis par France Travail, ont un contrat d'engagement ouvert et un métier recherché défini. Dans ce cas, la présence d'un handicap et sa sévérité peuvent être des éléments déterminants dans le choix du nombre de candidatures à envoyer.</p>
-                </div>
-            </div>
-
-            <div class="faq-section" data-faq-id="faq_4">
-                <div class="faq-question">
-                    La fixation de cette cible s'applique-t-elle aux demandeurs d'emploi suivis par les missions locales ?
-                </div>
-                <div class="faq-answer">
-                    <p><strong>NON.</strong> Elle ne s'applique qu'aux demandeurs d'emploi inscrits et accompagnés par France Travail et donc pas aux jeunes suivis par les missions locales. Toutefois, l'âge d'un demandeur d'emploi peut être un élément déterminant dans le choix du nombre de candidatures à envoyer.</p>
-                </div>
-            </div>
-
             <div class="faq-section" data-faq-id="faq_5">
                 <div class="faq-question">
                     La fixation de cette cible s'applique-t-elle uniquement aux demandeurs d'emploi pour lesquels une Offre Raisonnable d'Emploi est définie ?
                 </div>
                 <div class="faq-answer">
-                    <p><strong>NON.</strong> Un objectif de candidatures doit être fixé dès lors qu'un contrat d'engagement est ouvert et qu'un métier recherché est défini et pas uniquement lorsqu'il y a une ORE.</p>
+                    <p><strong>NON.</strong> Un objectif de candidatures doit être fixé dès lors qu'un contrat d'engagement est signé et qu'un métier recherché est défini et pas uniquement lorsqu'il y a une ORE.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- EN PRATIQUE -->
-        <section id="consignes">
-            <h2>En pratique</h2>
-
-            <p><strong>Comment inscrire l'objectif de candidatures dans le plan d'action d'un demandeur d'emploi ?</strong> Dans Organisation des Démarches, au choix :</p>
-            
-            <ul>
-                <li><strong>Ajoutez une seule action "Réponse à candidature"</strong> et indiquez une fréquence (x fois, tous les y jours) dans la description de l'action → Adapté aux demandeurs d'emploi capables d'identifier des offres et de faire des candidatures en autonomie</li>
-                <li><strong>Ajoutez une action distincte pour chaque candidature, MEC ou MER</strong> → Adapté aux candidatures et offres pour des postes ou entreprises précises, identifiées avec le demandeur d'emploi.</li>
-            </ul>
-
-            <p>Ces ajouts alimenteront directement le plan d'action du demandeur d'emploi si celui-ci a un contrat d'engagement ouvert.</p>
-
-            <div class="success-box">
-                <h4>Types de candidatures comptabilisées</h4>
-                <ul>
-                    <li>Mises En Contact,</li>
-                    <li>Mises En Relation,</li>
-                    <li>Réponses à des offres existantes ou candidatures spontanées,</li>
-                    <li>Offres identifiées en autonomie par le demandeur d'emploi ou propositions d'offres d'origine conseiller</li>
-                </ul>
-            </div>
-
-            <p>Cette démarche s'inscrit pleinement dans votre rôle d'accompagnement personnalisé, en vous laissant en toute liberté pour adapter l'objectif de candidatures aux profils et situations des personnes que vous suivez, selon les critères que vous jugez pertinents.</p>
-
-            <p><strong>Exemple de critères pouvant être mobilisés :</strong> âge du demandeur, modalité de suivi et d'accompagnement, freins périphériques à l'emploi, métier visé, tension du marché du travail local, ...</p>
-
-            <div class="tip-box">
-                <h4>💡 Conseil pratique</h4>
-                <p><strong>Fixez une fréquence mensuelle pour les demandeurs d'emploi en parcours intensif (Renforcé, Global, EXH ...) et une fréquence hebdomadaire pour les demandeurs d'emploi plus autonomes (Suivi, Guidé)</strong></p>
-            </div>
-
-            <h3>Questions fréquentes</h3>
 
             <div class="faq-section" data-faq-id="faq_6">
                 <div class="faq-question">
@@ -555,35 +623,53 @@
                     Si le demandeur d'emploi ne respecte pas la fréquence de candidatures fixée, peut-il être sanctionné ?
                 </div>
                 <div class="faq-answer">
-                    <p><strong>OUI.</strong> Comme toutes les autres actions inscrites dans le plan d'action, la fréquence de candidatures peut faire l'objet d'un contrôle, et potentiellement entraîner une sanction si elle n'est pas respectée. Toutefois, le fait de définir un effort de recherche attendu n'augmente pas systématiquement le risque de sanction. Pour certains DE, cela pourrait au contraire réduire ce risque, en les incitant à structurer leur recherche d'emploi et à produire autant de preuves d'un effort positif de recherche qui les protègent en cas de contrôle de la recherche d'emploi.</p>
+                    <p><strong>OUI.</strong> Le non-respect de la fréquence de candidatures en soit ne peut pas faire l'objet d'un contrôle ou d'une sanction. Les contrôles sont aléatoires ou bien déclenchés lorsqu'un défaut de recherche d'emploi est constaté. Pour qu'une sanction soit alors prononcée, le CRE se prononce sur un faisceau d'indices et non seulement sur un engagement spécifique non respecté. Ainsi, le fait de définir un effort de recherche attendu n'augmente pas systématiquement le risque de sanction. Pour certains DE, cela pourrait au contraire réduire ce risque, en les incitant à structurer leur recherche d'emploi et à produire autant de preuves d'un effort positif de recherche qui les protègent en cas de contrôle de la recherche d'emploi.</p>
                 </div>
             </div>
         </section>
 
+<section id="contact">
         <!-- Contact -->
         <div class="contact-info">
             <h2>Informations de Contact</h2>
-            <p>Si vous avez d'autres questions, vous pouvez écrire à <strong>experimentation_ced@ipp.eu</strong>.</p>
+            <p>Si vous avez d'autres questions, vous pouvez écrire à <strong>ced@ipp.eu</strong>.</p>
             <p>L'équipe de recherche de l'Institut des Politiques Publiques vous répondra, et mettra à jour la liste des questions fréquentes.</p>
         </div>
     </main>
 </div>
 
-<button id="back-to-top" aria-label="Retour en haut">↑</button>
+    <script>
+// ==========================
+// SYSTÈME DE TRACKING
+// ==========================
 
-<script>
-/* === TRACKING === */
-const tracking = { sections:{}, faqOpenTimes:{}, scrollMilestones:{}, sessionStart:Date.now() };
+const tracking = {
+    sections: {},
+    faqStates: {},
+    faqOpenTimes: {},
+    scrollMilestones: {},
+    sessionStart: Date.now()
+};
 
-function sendEvent(name, params={}) {
-    if (typeof gtag !== 'undefined') gtag('event', name, params);
+// Fonction d'envoi d'événements GA4
+function sendEvent(eventName, params = {}) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', eventName, params);
+    }
 }
 
+// ==========================
+// 1. PAGE LOADED
+// ==========================
 window.addEventListener('load', () => {
-    sendEvent('page_loaded', { timestamp: new Date().toISOString() });
+    sendEvent('page_loaded', {
+        timestamp: new Date().toISOString()
+    });
 });
 
-/* Scroll depth tracking */
+// ==========================
+// 2. SCROLL DEPTH (Global)
+// ==========================
 function trackScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const windowHeight = window.innerHeight;
@@ -595,7 +681,9 @@ function trackScroll() {
         const key = `scroll_${milestone}`;
         if (scrollPercent >= milestone && !tracking.scrollMilestones[key]) {
             tracking.scrollMilestones[key] = true;
-            sendEvent('scroll_depth', { scroll_percentage: milestone });
+            sendEvent('scroll_depth', {
+                scroll_percentage: milestone
+            });
         }
     });
 }
@@ -606,14 +694,20 @@ window.addEventListener('scroll', () => {
     scrollTimeout = setTimeout(trackScroll, 100);
 });
 
-/* Section observer */
-const observer = new IntersectionObserver(entries => {
+// ==========================
+// 3. SECTION VIEW (Intersection Observer)
+// ==========================
+const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         const sectionId = entry.target.id;
         
         if (entry.isIntersecting) {
+            // Section devient visible
             if (!tracking.sections[sectionId]) {
-                tracking.sections[sectionId] = { viewCount: 0, totalTime: 0 };
+                tracking.sections[sectionId] = {
+                    viewCount: 0,
+                    totalTime: 0
+                };
             }
             tracking.sections[sectionId].viewCount++;
             tracking.sections[sectionId].lastEnterTime = Date.now();
@@ -623,14 +717,10 @@ const observer = new IntersectionObserver(entries => {
                 view_count: tracking.sections[sectionId].viewCount
             });
             
-            // Update active nav link
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + sectionId) {
-                    link.classList.add('active');
-                }
-            });
+            // Mettre à jour la navigation active
+            updateActiveNav(sectionId);
         } else {
+            // Section n'est plus visible
             if (tracking.sections[sectionId] && tracking.sections[sectionId].lastEnterTime) {
                 const timeSpent = Math.round((Date.now() - tracking.sections[sectionId].lastEnterTime) / 1000);
                 tracking.sections[sectionId].totalTime += timeSpent;
@@ -645,11 +735,18 @@ const observer = new IntersectionObserver(entries => {
             }
         }
     });
-}, { threshold: 0.3 });
+}, {
+    threshold: 0.3 // Section considérée visible si 30% est à l'écran
+});
 
-document.querySelectorAll('section').forEach(s => observer.observe(s));
+// Observer toutes les sections
+document.querySelectorAll('section').forEach(section => {
+    sectionObserver.observe(section);
+});
 
-/* Nav click */
+// ==========================
+// 4. NAV CLICK
+// ==========================
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -660,23 +757,64 @@ document.querySelectorAll('.nav-link').forEach(link => {
             navigation_type: 'menu_click'
         });
         
-        const target = document.getElementById(targetId);
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Scroll vers la section
+        document.getElementById(targetId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+
+// Mettre à jour l'état actif du menu
+function updateActiveNav(sectionId) {
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// ==========================
+// 5. FAQ CLICK & TIME TRACKING
+// ==========================
+document.querySelectorAll('.faq-section').forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const faqId = item.getAttribute('data-faq-id');
+    
+    question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        const action = isOpen ? 'close' : 'open';
+        
+        // Toggle l'état
+        item.classList.toggle('open');
+        
+        // Trouver la section parente
+        const section = item.closest('section');
+        const sectionName = section ? section.id : 'unknown';
+        
+        sendEvent('faq_click', {
+            question_id: faqId,
+            section_name: sectionName,
+            action: action
+        });
+        
+        // Gestion du temps d'ouverture
+        if (action === 'open') {
+            tracking.faqOpenTimes[faqId] = Date.now();
+        } else {
+            if (tracking.faqOpenTimes[faqId]) {
+                const timeOpen = Math.round((Date.now() - tracking.faqOpenTimes[faqId]) / 1000);
+                sendEvent('faq_time_open', {
+                    question_id: faqId,
+                    time_seconds: timeOpen
+                });
+                delete tracking.faqOpenTimes[faqId];
+            }
         }
     });
 });
 
-/* FAQ with animation */
-document.querySelectorAll('.faq-section').forEach(item => {
-    const q = item.querySelector('.faq-question');
-    const id = item.dataset.faqId;
-    
-    q.addEventListener('click', () => {
-        const wasOpen = item.classList.contains('open');
-        const action = wasOpen ? 'close' : 'open';
-        
-        item.classList.toggle('open');
-        
-        const section = item.closest('section');
-        const sectionName = section ? section.id : 'unknown';
+</script>
+</body>
+</html>
